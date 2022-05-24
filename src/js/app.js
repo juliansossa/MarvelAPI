@@ -16,7 +16,7 @@ const obtenerDatos = async () => {
         }
 
     } catch (error) {
-        console.log(error);
+        console.error(error);
     }
 }
 obtenerDatos();
@@ -25,10 +25,12 @@ const mostrarDatos = async (array) => {
     let personajes = "";
     array.forEach(x=>{
         personajes += `
-        <img src="${x.thumbnail.path}.${x.thumbnail.extension}"></img>
-        <h3>${x.name}</h3>
+        <div class="card">
+            <img class="card__img" src="${x.thumbnail.path}.${x.thumbnail.extension}"></img>
+            <p class="card__paragraph" class="card__img">${x.name}</p>
+        </div>
         `
     });
 
-    document.getElementById("container").innerHTML = personajes;
+    document.getElementById("container-cards").innerHTML = personajes;
 }

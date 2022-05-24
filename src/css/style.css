@@ -1,3 +1,102 @@
-body {
-    
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: "Binance Plex", -apple-system, BlinkMacSystemFont, Arial,
+		"Helvetica Neue", sans-serif;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
 }
+
+:root {
+	--red: #f80000;
+	--black: #0b0e11;
+	--white: #ffffff;
+	--border: #dddfe248;
+	--dark: #202020;
+	--gray: rgb(118, 128, 143);
+}
+
+.body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 85%;
+	margin: auto;
+}
+
+/* nav */
+.nav {
+	/* height: 93px; */
+	background-color: var(--black);
+}
+
+.nav .info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--dark);
+	border: .8px solid var(--border);
+}
+
+.nav .links {
+	width: 100%;
+	height: 38px;
+	background-color: var(--dark);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav .links a {
+	text-decoration: none;
+	color: var(--white);
+}
+
+/* nav */
+/* cards */
+.container-cards {
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+	background: var(--border);
+    margin: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 352px;
+    height: 370px;
+    box-shadow: 2px 2px 5px var(--gray);
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px var(--gray);
+    transition: 100ms;
+    transform: translateY(-1%);
+}
+
+.card__img {
+	width: 100%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.card__paragraph {
+	color: var(--black);
+    margin: 20px 0 40px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+	text-align: center;
+}
+
+/* cards */
