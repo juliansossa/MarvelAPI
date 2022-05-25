@@ -120,6 +120,7 @@
 .footer__container div:nth-child(1) div {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .footer__container .footer__links {
@@ -163,7 +164,8 @@
 }
 
 .footer__playstore {
-	width: 120px;
+	width: 140px;
+	height: 60px;
 	color: var(--orange);
 }
 
