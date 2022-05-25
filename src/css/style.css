@@ -57,6 +57,7 @@
 .nav .links a {
 	text-decoration: none;
 	color: var(--white);
+	text-transform: uppercase;
 }
 
 /* nav */
@@ -69,34 +70,107 @@
 
 .card {
 	background: var(--border);
-    margin: 12px;
-    border-radius: 20px;
-    overflow: hidden;
-    cursor: pointer;
-    width: 352px;
-    height: 370px;
-    box-shadow: 2px 2px 5px var(--gray);
+	margin: 12px;
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: pointer;
+	width: 352px;
+	height: 370px;
+	box-shadow: 2px 2px 5px var(--gray);
 }
 
 .card:hover {
-    box-shadow: 5px 5px 20px var(--gray);
-    transition: 100ms;
-    transform: translateY(-1%);
+	box-shadow: 5px 5px 20px var(--gray);
+	transition: 100ms;
+	transform: translateY(-1%);
 }
 
 .card__img {
 	width: 100%;
-    height: 80%;
-    border-radius: 20px;
+	height: 80%;
+	border-radius: 20px;
 }
 
 .card__paragraph {
 	color: var(--black);
-    margin: 20px 0 40px 20px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
+	/* margin: 20px 0 40px 20px; */
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 28px;
 	text-align: center;
+	margin-top: 20px;
 }
 
 /* cards */
+/* footer */
+.footer {
+	width: 100%;
+	height: 572px;
+	background: var(--black);
+	margin-top: 80px;
+}
+
+.footer__container {
+	display: grid;
+	grid-template-columns: 30% 55% auto;
+	margin: 0 112px;
+	padding: 56px 32px;
+}
+
+.footer__container div:nth-child(1) div {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer__container .footer__links {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__link .footer__subtitle {
+	color: var(--white);
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 22px;
+}
+
+.footer__link a {
+	text-decoration: none;
+	color: rgb(212, 213, 216);
+	font-size: 16px;
+	margin-bottom: 17px;
+	display: flex;
+	width: 160px;
+	line-height: 25px;
+}
+
+.footer__logo {
+	width: 220px;
+	color: var(--orange);
+	height: 250px;
+}
+
+.footer__copyright {
+	color: var(--white);
+	font-size: 12px;
+	color: rgb(212, 213, 216);
+	margin: 20px 0;
+}
+
+.footer__appstore {
+	width: 120px;
+	color: var(--orange);
+}
+
+.footer__playstore {
+	width: 120px;
+	color: var(--orange);
+}
+
+.footer__icon {
+	width: 20px;
+	color: rgb(139, 141, 145);
+	margin: 5px;
+}
+
+/* footer */
