@@ -1,11 +1,11 @@
 const obtenerDatos = async () => {
     try {
-        const respuesta = await fetch("https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=a06e5ed27894cbe75a50b6b7c57e31ed&hash=6640616133ca308fe2d8bed822f9cd67");
+        const respuesta = await fetch("https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=a06e5ed27894cbe75a50b6b7c57e31ed&hash=6640616133ca308fe2d8bed822f9cd67");
         
         if (respuesta.status === 200) {
             const datos = await respuesta.json();
             const resultados = datos.data.results;
-            mostrarDatos(resultados);
+            mostrarDatos(resultados.reverse(x=>x.id));
         }
         else if (respuesta.status === 401) {
             console.error("Referencia no valida, error: " + respuesta.status)
@@ -26,7 +26,7 @@ const mostrarDatos = async (array) => {
         personajes += `
         <div class="card">
             <img class="card__img" src="${x.thumbnail.path}.${x.thumbnail.extension}"></img>
-            <p class="card__paragraph" class="card__img">${x.name}</p>
+            <p style="font-size: 15px;" class="card__paragraph" class="card__img">${x.title}</p>
         </div>
         `
     });
