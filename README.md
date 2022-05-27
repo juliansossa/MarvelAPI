@@ -11,3 +11,4 @@ la peticion se hace con el metodo fetch y se hace uso de Async/Await para el asi
 
 ```http
   https://juliansossa.github.io/MarvelAPI/
+```
