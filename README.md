@@ -9,6 +9,7 @@ la peticion se hace con el metodo fetch y se hace uso de Async/Await para el asi
 
 #### Hosteado en github pages
 
+[Link al proyecto](https://juliansossa.github.io/MarvelAPI)
 ```http
   https://juliansossa.github.io/MarvelAPI/
 ```
