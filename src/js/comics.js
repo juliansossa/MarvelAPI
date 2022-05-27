@@ -25,8 +25,8 @@ const mostrarDatos = async (array) => {
     array.forEach(x=>{
         personajes += `
         <div class="card">
-            <img class="card__img" src="${x.thumbnail.path}.${x.thumbnail.extension}"></img>
-            <p style="font-size: 15px;" class="card__paragraph" class="card__img">${x.title}</p>
+            <img class="card__img card__img-comics" src="${x.thumbnail.path}.${x.thumbnail.extension}"></img>
+            <p class="card__paragraph card__paragraph-comics" class="card__img">${x.title}</p>
         </div>
         `
     });

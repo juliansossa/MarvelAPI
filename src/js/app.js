@@ -1,3 +1,4 @@
+//Peticion a API de marvel
 const obtenerDatos = async () => {
     try {
         const respuesta = await fetch("https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=a06e5ed27894cbe75a50b6b7c57e31ed&hash=6640616133ca308fe2d8bed822f9cd67");
@@ -20,8 +21,11 @@ const obtenerDatos = async () => {
 }
 obtenerDatos();
 
+//recibe los datos
 const mostrarDatos = async (array) => {
     let personajes = "";
+    //metodo forEach el cual itera los elementos del array
+    //para mostrarlos en html
     array.forEach(x=>{
         personajes += `
         <div class="card">
